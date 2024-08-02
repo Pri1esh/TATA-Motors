@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.32" height="61.32" viewBox="0 0 61.32 61.32">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bb044d"/>
+      <stop offset="1" stop-color="#8147a9"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_fa-solid-square-poll-vertical" data-name="Icon fa-solid-square-poll-vertical" d="M8.76,2.25A8.768,8.768,0,0,0,0,11.01v43.8a8.768,8.768,0,0,0,8.76,8.76h43.8a8.768,8.768,0,0,0,8.76-8.76V11.01a8.768,8.768,0,0,0-8.76-8.76Zm8.76,26.28a4.375,4.375,0,0,1,4.38,4.38V46.05a4.38,4.38,0,1,1-8.76,0V32.91A4.375,4.375,0,0,1,17.52,28.53Zm8.76-8.76a4.38,4.38,0,0,1,8.76,0V46.05a4.38,4.38,0,1,1-8.76,0ZM43.8,37.29a4.375,4.375,0,0,1,4.38,4.38v4.38a4.38,4.38,0,1,1-8.76,0V41.67A4.375,4.375,0,0,1,43.8,37.29Z" transform="translate(0 -2.25)" fill="url(#linear-gradient)"/>
+</svg>
