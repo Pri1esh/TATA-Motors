@@ -2,22 +2,8 @@
     --spacing: 25px;
   }
   
-  .home-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  
-  .home-section {
-    width: 100%;
-    margin-top: 80px;
-    overflow-y: scroll;
-    padding-inline: var(--spacing);
-    height: calc(100vh - 80px);
-  }
-  
+
   .tab-row {
-    padding-block: var(--spacing);
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     gap: var(--spacing);

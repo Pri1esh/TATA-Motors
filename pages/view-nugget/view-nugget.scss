@@ -1,0 +1,265 @@
+:root {
+  --spacing: 25px;
+  --formspacing: 20px;
+  --formBorderRadius: 20px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.home-section {
+  width: 100%;
+  margin-top: 80px;
+  overflow-y: scroll;
+  padding-inline: var(--spacing);
+  overflow-x: hidden;
+
+  .copyRight {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #898989;
+  }
+
+  .formheadingSection {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+    h1 {
+      font-size: 24px;
+      color: #1a5193;
+      font-weight: 700;
+      white-space: nowrap;
+      text-wrap: nowrap;
+      margin-bottom: 0px;
+    }
+    hr {
+      height: 4px;
+      width: 100%;
+      margin-top: unset;
+      border-top: unset;
+      margin-bottom: 0px;
+      opacity: 1;
+      border-bottom: 3px solid #1a5193;
+    }
+  }
+
+  .nuggetSection {
+    width: 100%;
+    padding: var(--formspacing);
+    background-color: #ffffff;
+    border-radius: var(--formBorderRadius);
+    box-shadow: 0px 3px 6px #000000;
+
+    .nuggetUser {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      .nuggetUserPhoto {
+        width: fit-content;
+        border-radius: 50%;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+      .nuggetUsername {
+        display: flex;
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 4px;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 0px;
+        }
+
+        .toolTipIcon {
+          width: 13px;
+          height: 13px;
+          margin-left: 10px;
+          margin-top: -5px;
+        }
+        /* Tooltip container */
+        .tooltip-container {
+          position: relative;
+          display: inline-block;
+        }
+        .tooltip-content {
+          visibility: hidden;
+          min-width: 500px;
+          background-color: #0000009f;
+          color: #fff;
+          border-radius: 9px;
+          border-top-left-radius: 0px;
+          padding: 5px;
+          position: absolute;
+          z-index: 1;
+          top: 40%; /* Position above the image */
+          left: 50%;
+          margin-left: 10px; /* Adjust this value as needed */
+          opacity: 1;
+          transition: opacity 0.3s;
+          box-shadow: 0px 3px 6px #00000065;
+          font-size: 12px;
+          font-weight: 500;
+        }
+        .tooltip-container:hover .tooltip-content {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    .nuggetData {
+      display: flex;
+      gap: 30px;
+      margin-top: 40px;
+      .imageDiv {
+        width: 50%;
+        border-radius: 22px;
+        img {
+          width: 100%;
+          border-radius: 22px;
+        }
+      }
+      .contentData {
+        width: 50%;
+        color: #646464;
+        p {
+          margin-bottom: 0px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .descriptionData {
+      background-color: #f7f7f7;
+      padding: 20px;
+      margin-top: 20px;
+      h1 {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      p {
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    .imgDesc {
+      margin-top: 20px;
+      .ImgDIV {
+        width: 100%;
+        text-align: center;
+        img {
+          max-width: 600px;
+          border-radius: 22px;
+          margin-bottom: 20px;
+        }
+      }
+      p {
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .actionDiv {
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between;
+      .viewDoc {
+        background-color: #1a5193;
+        color: #ffffff;
+        border: none;
+        border-radius: 29px;
+        font-size: 14px;
+        font-weight: 500;
+        padding-block: 8px;
+        padding-inline: 25px;
+      }
+      .countDivs{
+        display: flex;
+        gap:20px;
+        img{
+            width: 22px;
+        }
+        span{
+            font-size: 12px;
+            font-weight: 600;
+            color: #848484;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .nuggetData {
+      display: block !important;
+      .imageDiv {
+        width: 100% !important;
+      }
+      .contentData {
+        margin-top: 20px;
+        width: 100% !important;
+
+        .contentDataCol {
+          margin-top: 10px;
+        }
+      }
+    }
+    .imgDesc {
+      .ImgDIV {
+        img {
+          max-width: 500px !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .nuggetUsername {
+      .tooltip-content {
+        min-width: 200px !important;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .imgDesc {
+      .ImgDIV {
+        img {
+          max-width: unset !important;
+          width: 100%;
+        }
+      }
+    }
+    .actionDiv{
+        display: block !important;
+        .countDivs{
+            margin-top: 20px;
+            img{
+                width: 25px;
+            }
+        }
+    }
+  }
+}

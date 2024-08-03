@@ -1,0 +1,550 @@
+:root {
+    --spacing: 25px;
+    --formspacing: 20px;
+    --formBorderRadius: 20px;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .home-section {
+    width: 100%;
+    margin-top: 80px;
+    overflow-y: scroll;
+    padding-inline: var(--spacing);
+    overflow-x: hidden;
+  }
+  
+  .formSection {
+    padding: var(--formspacing);
+    background-color: #ffffff;
+    border-radius: var(--formBorderRadius);
+    box-shadow: 0px 3px 6px #000000;
+  
+    .submissions {
+      .tooltip-container {
+        margin-top: 0px !important;
+      }
+    }
+    .columnDivs,
+    .columnDivsCheckBox,
+    .submissions {
+      .toolTipIcon {
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+        margin-top: -5px;
+      }
+      /* Tooltip container */
+      .tooltip-container {
+        position: relative;
+        display: inline-block;
+      }
+  
+      /* Tooltip content */
+      .tooltip-content {
+        visibility: hidden;
+        min-width: 500px;
+        background-color: #0000009f;
+        color: #fff;
+        border-radius: 9px;
+        border-top-left-radius: 0px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        top: 40%; /* Position above the image */
+        left: 50%;
+        margin-left: 10px; /* Adjust this value as needed */
+        opacity: 1;
+        transition: opacity 0.3s;
+        box-shadow: 0px 3px 6px #00000065;
+        font-size: 12px;
+        font-weight: 500;
+      }
+  
+      /* Show the tooltip when hovering over the container */
+      .tooltip-container:hover .tooltip-content {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .customRows {
+      margin: 0;
+      margin-bottom: 15px;
+
+      .multiSelect{
+        display: flex;
+        gap:15px;
+        .selectInput{
+          .dropDownList{
+            max-height: 150px;
+            overflow-y: scroll;
+          }
+        }
+        .linksBox{
+          width: 50%;
+        }
+        input[type="date"] {
+          background-color: #ffffff;
+          border: 1px solid #c7c7c7;
+          padding: 0;
+          width: 100%;
+          border-radius: 9px;
+          height: 40px;
+          padding-inline: 10px;
+    
+          &:focus-visible {
+            outline: none;
+          }
+        }
+      }
+      .customCol:first-child {
+        padding-right: var(--formspacing);
+      }
+      .customCol:nth-child(2) {
+        padding-left: var(--formspacing);
+      }
+      .uploadDiv {
+        border: 1px solid #c7c7c7;
+        height: 40px !important;
+        border-radius: 9px;
+      }
+    }
+  
+    .col-md-6,
+    .col-md-12 {
+      padding: 0;
+    }
+    .col-md-12{
+      padding-right:0px !important
+    }
+    .col-md-6:nth-child(n + 3),
+    .col-md-12 {
+      margin-top: 15px;
+    }
+    .columnDivsCheckBox {
+      width: 50%;
+      padding-right: var(--formspacing);
+      margin-bottom: var(--formspacing);
+      .checkBoxFlex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .form-check {
+          background-color: #f1f1f1;
+          display: flex;
+          justify-content: center;
+          padding-block: 10px;
+          border-radius: 9px;
+          flex: 1; /* Allow form-check elements to grow and fill available space */
+          min-width: 100px; /* Minimum width for each checkbox container */
+  
+          .form-check-input {
+            margin-left: -3.25rem;
+            transform: scale(1.5);
+            /* -webkit-transform: scale(1.5); */
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+          }
+  
+          label {
+            display: block;
+            color: #000000;
+          }
+        }
+      }
+    }
+  
+    input[type="file"]::-webkit-file-upload-button {
+      background: none;
+      background-color: #f7f7f7;
+      border: 1px solid #c7c7c7;
+  
+      border-radius: 9px;
+    }
+  
+    input[type="file"] {
+      background-color: #f7f7f7;
+      border: none;
+      border-radius: 9px;
+    }
+  
+    .columnDivs,
+    .columnDivsCheckBox {
+      h2 {
+        margin: 0px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 6px;
+  
+        span {
+          color: #fb0000;
+          font-weight: 600;
+          margin-left: 2px;
+          /* margin-top: -30px; */
+          position: absolute;
+          top: -4px;
+        }
+      }
+      .form-control {
+        padding: 0px;
+        height: 100%;
+        line-height: 2.38;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      input[type="file"]::-webkit-file-upload-button {
+        width: 25%;
+        line-height: 39px !important;
+        margin-top: -1px;
+        margin-left: -1px;
+        margin-right: 12px !important;
+      }
+      input[type="text"] {
+        background-color: #ffffff;
+        border: 1px solid #c7c7c7;
+        padding: 0;
+        width: 100%;
+        border-radius: 9px;
+        height: 40px;
+        padding-inline: 10px;
+  
+        &:focus-visible {
+          outline: none;
+        }
+      }
+  
+      input[type="text"].filled {
+        background-color: #f4f4f4 !important; /* Change to desired color */
+      }
+  
+      .selectInput {
+        height: 40px;
+        position: relative;
+        img {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .dropDownList {
+          display: none;
+          margin-top: 5px;
+          border: 1px solid #c7c7c7;
+          border-radius: 9px;
+          width: 100%;
+          position: absolute;
+          z-index: 1;
+          background-color: #ffffff;
+          ul {
+            margin-bottom: 0px;
+            list-style: none;
+            padding: 0px;
+            width: 100%;
+            li {
+              padding-block: 5px;
+              padding-inline: 10px;
+              &:hover {
+                background-color: #e8eaed;
+              }
+            }
+          }
+        }
+      }
+  
+      label {
+        color: #fb0000;
+        font-size: 14px;
+        display: none;
+      }
+    }
+  
+    .submissionsDiv {
+      .previewCheck {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        .disclaimer {
+          font-weight: 600;
+          font-size: 14px;
+          margin-right: 10px;
+          .disc {
+          }
+        }
+        div {
+          margin-top: 0px !important;
+        }
+        span {
+          white-space: nowrap;
+          text-wrap: nowrap;
+          color: #2162b4;
+          text-decoration: underline;
+          font-weight: 600;
+        }
+        .large-checkbox {
+          transform: scale(1.5); /* Scale the checkbox */
+          -webkit-transform: scale(1.5); /* Safari */
+          -moz-transform: scale(1.5); /* Firefox */
+          -ms-transform: scale(1.5); /* IE 9 */
+          -o-transform: scale(1.5); /* Opera */
+          margin-right: 10px; /* Adjust spacing as needed */
+          margin-top: 7px;
+        }
+      }
+      .uploadToggle {
+        gap: 50px;
+      }
+      .toggleDIv {
+        gap: 20px;
+        label {
+          margin-bottom: 12px;
+        }
+      }
+  
+      .toggleOption {
+        font-size: 17px;
+        /* margin-block: 25px; */
+        margin-top: 10px;
+        margin-bottom: 25px;
+        white-space: nowrap;
+      }
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 48px;
+        height: 20px;
+      }
+  
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+  
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+  
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 4px;
+        bottom: 2.1px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+  
+      input:checked + .slider {
+        background-color: #2d509f;
+      }
+  
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+      }
+  
+      input:checked + .slider:before {
+        -webkit-transform: translateX(19px);
+        -ms-transform: translateX(19px);
+        transform: translateX(25px);
+        background-color: #ffffff;
+      }
+  
+      /* Rounded sliders */
+      .slider.round {
+        border: 1px solid #2d509f;
+        border-radius: 34px;
+        background-color: #ffffff;
+      }
+  
+      .slider.round:before {
+        border-radius: 50%;
+        background-color: #2d509f;
+      }
+  
+      .submissions {
+        div:not(:first-child) {
+          margin-top: 15px;
+        }
+        h2 {
+          margin: 0px;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 6px;
+        }
+        .form-control {
+          box-shadow: none;
+          border: 1px solid #ced4da;
+        }
+        .buttonSumit {
+          display: flex;
+          gap: 15px;
+  
+          justify-content: end;
+          .cancelBtn {
+            padding-inline: 40px;
+            padding-block: 6px;
+            color: #2d509f;
+            border-radius: 29px;
+            font-weight: 500;
+            background-color: #ffffff;
+            border: 2px solid #2d509f;
+          }
+          .submitBtn {
+            padding-inline: 40px;
+            padding-block: 6px;
+            color: #ffffff;
+            border-radius: 29px;
+            font-weight: 500;
+            background-color: #2d509f;
+            border: 2px solid #2d509f;
+          }
+        }
+      }
+    }
+  }
+  
+  .formSection {
+    .submissionsDiv {
+      .uploadDiv {
+        border: 1px solid #c7c7c7;
+        border-radius: 9px;
+        height: 40px !important;
+        margin-top: 5px;
+        width: 100%;
+        .form-control {
+          padding: 0px;
+          height: 100%;
+          line-height: 2.38;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        input[type="file"]::-webkit-file-upload-button {
+          width: 25%;
+          line-height: 39px !important;
+          margin-top: -1px;
+          margin-left: -1px;
+          margin-right: 12px !important;
+        }
+      }
+    }
+  }
+  
+  .home-section {
+    .formheadingSection {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: center;
+      gap: 10px;
+  
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      h1 {
+        font-size: 24px;
+        color: #1a5193;
+        font-weight: 700;
+        white-space: nowrap;
+        text-wrap: nowrap;
+        margin-bottom: 0px;
+      }
+      hr {
+        height: 4px;
+        width: 100%;
+        margin-top: unset;
+        border-top: unset;
+        margin-bottom: 0px;
+        opacity: 1;
+        border-bottom: 3px solid #1a5193;
+      }
+    }
+    .copyRight {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #898989;
+    }
+  }
+  
+  @media (max-width: 1055px) {
+    .formSection .columnDivsCheckBox .checkBoxFlex .form-check {
+      min-width: 50px !important;
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .formSection .tooltip-content {
+      min-width: 200px !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .formSection {
+      .tooltip-content {
+        min-width: 150px !important;
+      }
+      .customRows {
+        
+        .col-md-6 {
+          margin-top: 15px;
+        }
+  
+        .customCol:first-child {
+          padding-right: 0px !important;
+        }
+        .customCol:nth-child(2) {
+          padding-left: 0px !important;
+        }
+      }
+      .columnDivsCheckBox {
+        width: 100% !important;
+      }
+      .submissionsDiv {
+        input:checked + .slider:before {
+          transform: translateX(16px) !important;
+        }
+        .previewCheck,
+        .uploadToggle {
+          display: block !important;
+        }
+        .toggleOption {
+          white-space: unset !important;
+        }
+  
+        .desc {
+          display: block !important;
+        }
+        .submissions {
+          .buttonSumit {
+            margin-top: 20px !important;
+            justify-content: center !important;
+            .cancelBtn {
+              padding-inline: 30px;
+            }
+            .submitBtn {
+              padding-inline: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,737 @@
+:root {
+  --spacing: 25px;
+  --formspacing: 20px;
+  --formBorderRadius: 20px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.home-section {
+  width: 100%;
+  margin-top: 80px;
+  overflow-y: scroll;
+  padding-inline: var(--spacing);
+  overflow-x: hidden;
+}
+
+.formSection {
+  padding: var(--formspacing);
+  background-color: #ffffff;
+  border-radius: var(--formBorderRadius);
+  box-shadow: 0px 3px 6px #000000;
+}
+.formSection .submissions .tooltip-container {
+  margin-top: 0px !important;
+}
+.formSection .columnDivs,
+.formSection .columnDivsCheckBox,
+.formSection .submissions {
+  /* Tooltip container */
+  /* Tooltip content */
+  /* Show the tooltip when hovering over the container */
+}
+.formSection .columnDivs .toolTipIcon,
+.formSection .columnDivsCheckBox .toolTipIcon,
+.formSection .submissions .toolTipIcon {
+  width: 13px;
+  height: 13px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.formSection .columnDivs .tooltip-container,
+.formSection .columnDivsCheckBox .tooltip-container,
+.formSection .submissions .tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+.formSection .columnDivs .tooltip-content,
+.formSection .columnDivsCheckBox .tooltip-content,
+.formSection .submissions .tooltip-content {
+  visibility: hidden;
+  min-width: 500px;
+  background-color: rgba(0, 0, 0, 0.6235294118);
+  color: #fff;
+  border-radius: 9px;
+  border-top-left-radius: 0px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 40%; /* Position above the image */
+  left: 50%;
+  margin-left: 10px; /* Adjust this value as needed */
+  opacity: 1;
+  transition: opacity 0.3s;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3960784314);
+  font-size: 12px;
+  font-weight: 500;
+}
+.formSection .columnDivs .tooltip-container:hover .tooltip-content,
+.formSection .columnDivsCheckBox .tooltip-container:hover .tooltip-content,
+.formSection .submissions .tooltip-container:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+.formSection .customRows {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.formSection .customRows .customCol:first-child {
+  padding-right: var(--formspacing);
+}
+.formSection .customRows .customCol:nth-child(2) {
+  padding-left: var(--formspacing);
+}
+.formSection .customRows .uploadDiv {
+  border: 1px solid #c7c7c7;
+  height: 40px !important;
+  border-radius: 9px;
+}
+.formSection .customRows .upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.formSection .customRows .upload-container input[type=file] {
+  display: none;
+}
+.formSection .customRows .upload-container .file-name,
+.formSection .customRows .upload-container .doc-name {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  width: 100%;
+  padding-block: 5px;
+  padding-inline: 12px;
+  border-radius: 5px;
+  margin-right: 0px;
+}
+.formSection .customRows .upload-container .file-name::placeholder,
+.formSection .customRows .upload-container .doc-name::placeholder {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.formSection .customRows .upload-container label {
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding-inline: 30px;
+  display: block !important;
+}
+.formSection .customRows .upload-container .upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d509f;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 500;
+  height: 60px;
+  padding-inline: 45px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.formSection .customRows .upload-container .uploadThumbNail {
+  padding-inline: 0px;
+  height: 40px;
+  background-color: #2d509f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  margin-left: -20px;
+}
+.formSection .customRows .upload-container .uploadThumbNail img {
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+}
+.formSection .col-md-6,
+.formSection .col-md-12 {
+  padding: 0;
+}
+.formSection .col-md-6:nth-child(n+3),
+.formSection .col-md-12 {
+  margin-top: 15px;
+}
+.formSection .columnDivsCheckBox {
+  width: 50%;
+  padding-right: var(--formspacing);
+  margin-bottom: 20px;
+}
+.formSection .columnDivsCheckBox .checkBoxFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.formSection .columnDivsCheckBox .checkBoxFlex .form-check {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  padding-block: 10px;
+  border-radius: 9px;
+  flex: 1; /* Allow form-check elements to grow and fill available space */
+  min-width: 100px; /* Minimum width for each checkbox container */
+}
+.formSection .columnDivsCheckBox .checkBoxFlex .form-check .form-check-input {
+  margin-left: -3.25rem;
+  transform: scale(1.5);
+  /* -webkit-transform: scale(1.5); */
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.formSection .columnDivsCheckBox .checkBoxFlex .form-check label {
+  display: block;
+  color: #000000;
+}
+.formSection input[type=file]::-webkit-file-upload-button {
+  background: none;
+  background-color: #f7f7f7;
+  border: 1px solid #c7c7c7;
+  border-radius: 9px;
+}
+.formSection input[type=file] {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 9px;
+}
+.formSection .columnDivs h2,
+.formSection .columnDivsCheckBox h2 {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.formSection .columnDivs h2 span,
+.formSection .columnDivsCheckBox h2 span {
+  color: #fb0000;
+  font-weight: 600;
+  margin-left: 2px;
+  /* margin-top: -30px; */
+  position: absolute;
+  top: -4px;
+}
+.formSection .columnDivs .form-control,
+.formSection .columnDivsCheckBox .form-control {
+  padding: 0px;
+  height: 100%;
+  line-height: 2.38;
+}
+.formSection .columnDivs .form-control:focus,
+.formSection .columnDivsCheckBox .form-control:focus {
+  box-shadow: none;
+}
+.formSection .columnDivs input[type=file]::-webkit-file-upload-button,
+.formSection .columnDivsCheckBox input[type=file]::-webkit-file-upload-button {
+  width: 25%;
+  line-height: 39px !important;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-right: 12px !important;
+}
+.formSection .columnDivs input[type=text],
+.formSection .columnDivsCheckBox input[type=text] {
+  background-color: #ffffff;
+  border: 1px solid #c7c7c7;
+  padding: 0;
+  width: 100%;
+  border-radius: 9px;
+  height: 40px;
+  padding-inline: 10px;
+}
+.formSection .columnDivs input[type=text]:focus-visible,
+.formSection .columnDivsCheckBox input[type=text]:focus-visible {
+  outline: none;
+}
+.formSection .columnDivs input[type=text].filled,
+.formSection .columnDivsCheckBox input[type=text].filled {
+  background-color: #f4f4f4 !important; /* Change to desired color */
+}
+.formSection .columnDivs .selectInput,
+.formSection .columnDivsCheckBox .selectInput {
+  height: 40px;
+  position: relative;
+}
+.formSection .columnDivs .selectInput img,
+.formSection .columnDivsCheckBox .selectInput img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.formSection .columnDivs .selectInput .dropDownList,
+.formSection .columnDivsCheckBox .selectInput .dropDownList {
+  display: none;
+  margin-top: 5px;
+  border: 1px solid #c7c7c7;
+  border-radius: 9px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.formSection .columnDivs .selectInput .dropDownList ul,
+.formSection .columnDivsCheckBox .selectInput .dropDownList ul {
+  margin-bottom: 0px;
+  list-style: none;
+  padding: 0px;
+  width: 100%;
+}
+.formSection .columnDivs .selectInput .dropDownList ul li,
+.formSection .columnDivsCheckBox .selectInput .dropDownList ul li {
+  padding-block: 5px;
+  padding-inline: 10px;
+}
+.formSection .columnDivs .selectInput .dropDownList ul li:hover,
+.formSection .columnDivsCheckBox .selectInput .dropDownList ul li:hover {
+  background-color: #e8eaed;
+}
+.formSection .columnDivs label,
+.formSection .columnDivsCheckBox label {
+  color: #fb0000;
+  font-size: 14px;
+  display: none;
+}
+.formSection .submissionsDiv {
+  /* Rounded sliders */
+}
+.formSection .submissionsDiv .previewCheckContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.formSection .submissionsDiv .previewCheckContent .approverSelect {
+  width: 100%;
+}
+.formSection .submissionsDiv .previewCheckContent .labelClass {
+  display: none;
+}
+.formSection .submissionsDiv .previewCheckContent .selectInput {
+  height: 40px;
+  position: relative;
+}
+.formSection .submissionsDiv .previewCheckContent .selectInput input[type=text] {
+  background-color: #ffffff;
+  border: 1px solid #c7c7c7;
+  padding: 0;
+  width: 100%;
+  border-radius: 9px;
+  height: 40px;
+  padding-inline: 10px;
+}
+.formSection .submissionsDiv .previewCheckContent .selectInput input[type=text]:focus-visible {
+  outline: none;
+}
+.formSection .submissionsDiv .previewCheckContent .selectInput img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.formSection .submissionsDiv .previewCheckContent .selectInput .dropDownList {
+  display: none;
+  margin-top: 5px !important;
+  border: 1px solid #c7c7c7;
+  border-radius: 9px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.formSection .submissionsDiv .previewCheckContent .selectInput .dropDownList ul {
+  margin-bottom: 0px;
+  list-style: none;
+  padding: 0px;
+  width: 100%;
+}
+.formSection .submissionsDiv .previewCheckContent .selectInput .dropDownList ul li {
+  padding-block: 5px;
+  padding-inline: 10px;
+}
+.formSection .submissionsDiv .previewCheckContent .selectInput .dropDownList ul li:hover {
+  background-color: #e8eaed;
+}
+.formSection .submissionsDiv .previewCheckContent .disclaimer {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.formSection .submissionsDiv .previewCheckContent div {
+  margin-top: 0px !important;
+}
+.formSection .submissionsDiv .previewCheckContent span {
+  white-space: nowrap;
+  text-wrap: nowrap;
+  color: #2162b4;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.formSection .submissionsDiv .previewCheckContent .large-checkbox {
+  transform: scale(1.5); /* Scale the checkbox */
+  -webkit-transform: scale(1.5); /* Safari */
+  -moz-transform: scale(1.5); /* Firefox */
+  -ms-transform: scale(1.5); /* IE 9 */
+  -o-transform: scale(1.5); /* Opera */
+  margin-right: 10px; /* Adjust spacing as needed */
+  margin-top: 7px;
+}
+.formSection .submissionsDiv .uploadToggle {
+  gap: 50px;
+}
+.formSection .submissionsDiv .toggleDIv {
+  gap: 20px;
+}
+.formSection .submissionsDiv .toggleDIv label {
+  margin-bottom: 12px;
+}
+.formSection .submissionsDiv .toggleOption {
+  font-size: 17px;
+  /* margin-block: 25px; */
+  margin-top: 10px;
+  margin-bottom: 25px;
+  white-space: nowrap;
+}
+.formSection .submissionsDiv .switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 20px;
+}
+.formSection .submissionsDiv .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.formSection .submissionsDiv .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.formSection .submissionsDiv .slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 2.1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.formSection .submissionsDiv input:checked + .slider {
+  background-color: #2d509f;
+}
+.formSection .submissionsDiv input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+.formSection .submissionsDiv input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(25px);
+  background-color: #ffffff;
+}
+.formSection .submissionsDiv .slider.round {
+  border: 1px solid #2d509f;
+  border-radius: 34px;
+  background-color: #ffffff;
+}
+.formSection .submissionsDiv .slider.round:before {
+  border-radius: 50%;
+  background-color: #2d509f;
+}
+.formSection .submissionsDiv .submissions div:not(:first-child) {
+  margin-top: 15px;
+}
+.formSection .submissionsDiv .submissions h2 {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.formSection .submissionsDiv .submissions .form-control {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+.formSection .submissionsDiv .submissions .buttonSumit {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+}
+.formSection .submissionsDiv .submissions .buttonSumit .cancelBtn {
+  padding-inline: 40px;
+  padding-block: 6px;
+  color: #2d509f;
+  border-radius: 29px;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: 2px solid #2d509f;
+}
+.formSection .submissionsDiv .submissions .buttonSumit .submitBtn {
+  padding-inline: 40px;
+  padding-block: 6px;
+  color: #ffffff;
+  border-radius: 29px;
+  font-weight: 500;
+  background-color: #2d509f;
+  border: 2px solid #2d509f;
+}
+.formSection .commentHistory {
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(to right, #8147a9, #bb044d);
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  cursor: pointer;
+}
+.formSection .commentHistory h5 {
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.formSection .commentHistory img {
+  width: 15px;
+}
+.formSection .commentHistory img.imgRotateArraow {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.formSection .historyContent {
+  height: auto;
+  display: none;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.formSection .historyContent::-webkit-scrollbar {
+  display: none;
+}
+.formSection .historyContent .commentTable {
+  padding-inline: 20px;
+  font-size: 15px;
+}
+.formSection .historyContent .commentTable th {
+  font-weight: 400 !important;
+}
+.formSection .historyContent .commentTable thead th {
+  font-weight: 500 !important;
+}
+.formSection .historyContent .commentTable .customTD {
+  max-width: 300px;
+  min-width: 120px;
+}
+.formSection .historyContent.show {
+  display: block;
+  padding-inline: 20px;
+}
+
+.formSection .submissionsDiv .uploadDiv {
+  border: 1px solid #c7c7c7;
+  border-radius: 9px;
+  height: 40px !important;
+  margin-top: 5px;
+  width: 100%;
+}
+.formSection .submissionsDiv .uploadDiv .form-control {
+  padding: 0px;
+  height: 100%;
+  line-height: 2.38;
+}
+.formSection .submissionsDiv .uploadDiv .form-control:focus {
+  box-shadow: none;
+}
+.formSection .submissionsDiv .uploadDiv input[type=file]::-webkit-file-upload-button {
+  width: 25%;
+  line-height: 39px !important;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-right: 12px !important;
+}
+
+.home-section .formheadingSection {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 10px;
+}
+.home-section .formheadingSection img {
+  width: 30px;
+  height: 30px;
+}
+.home-section .formheadingSection h1 {
+  font-size: 24px;
+  color: #1a5193;
+  font-weight: 700;
+  white-space: nowrap;
+  text-wrap: nowrap;
+  margin-bottom: 0px;
+}
+.home-section .formheadingSection hr {
+  height: 4px;
+  width: 100%;
+  margin-top: unset;
+  border-top: unset;
+  margin-bottom: 0px;
+  opacity: 1;
+  border-bottom: 3px solid #1a5193;
+}
+.home-section .copyRight {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #898989;
+}
+
+@media (max-width: 1055px) {
+  .formSection .columnDivsCheckBox .checkBoxFlex .form-check {
+    min-width: 50px !important;
+  }
+}
+@media (max-width: 1300px) {
+  .formSection .tooltip-content {
+    min-width: 200px !important;
+  }
+}
+@media (max-width: 767px) {
+  .formSection .uploadThumbNail {
+    padding-inline: 10px !important;
+    height: 40px !important;
+    background-color: #2d509f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+  }
+  .formSection .uploadThumbNail img {
+    width: 20px;
+    height: 16px;
+    margin-left: 0px;
+    margin-top: -5px;
+    cursor: pointer;
+  }
+  .formSection .upload-container label {
+    margin-right: 4px;
+  }
+  .formSection .upload-container .upload-button {
+    padding-inline: 40px !important;
+    border: none;
+    font-size: 18px !important;
+    font-family: Roboto;
+    font-weight: 500;
+    height: 45px !important;
+  }
+  .formSection .upload-container .file-name,
+  .formSection .upload-container .doc-name {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 0px;
+  }
+  .formSection .tooltip-content {
+    min-width: 150px !important;
+  }
+  .formSection .customRows .col-md-6 {
+    margin-top: 15px;
+  }
+  .formSection .customRows .customCol:first-child {
+    padding-right: 0px !important;
+  }
+  .formSection .customRows .customCol:nth-child(2) {
+    padding-left: 0px !important;
+  }
+  .formSection .columnDivsCheckBox {
+    width: 100% !important;
+  }
+  .formSection .submissionsDiv .uploadDiv {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .formSection .submissionsDiv input:checked + .slider:before {
+    transform: translateX(16px) !important;
+  }
+  .formSection .submissionsDiv .previewCheckContent,
+  .formSection .submissionsDiv .uploadToggle {
+    display: block !important;
+  }
+  .formSection .submissionsDiv .toggleOption {
+    white-space: unset !important;
+  }
+  .formSection .submissionsDiv .desc {
+    display: block !important;
+  }
+  .formSection .submissionsDiv .submissions .buttonSumit {
+    margin-top: 20px !important;
+    justify-content: center !important;
+  }
+  .formSection .submissionsDiv .submissions .buttonSumit .cancelBtn {
+    padding-inline: 30px;
+  }
+  .formSection .submissionsDiv .submissions .buttonSumit .submitBtn {
+    padding-inline: 30px;
+  }
+  .formSection .commentHistory h5 {
+    font-size: 18px;
+  }
+  .formSection .commentTable .customTD {
+    max-width: 600px !important;
+    min-width: 180px !important;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .uploadThumbNail {
+    padding-inline: 20px;
+    height: 40px;
+    background-color: #2d509f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+  }
+}
+@media (max-width: 1000px) {
+  .upload-container .file-name,
+  .upload-container .doc-name {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .upload-container .upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d509f;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    font-family: Roboto;
+    font-weight: 500;
+    height: 60px;
+    padding-inline: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

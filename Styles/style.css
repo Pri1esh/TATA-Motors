@@ -2,6 +2,8 @@
   --spacing: 20px;
 }
 
+
+
 body {
   background-color: #e8eaed;
   overflow-x: hidden;
@@ -11,6 +13,23 @@ body {
   justify-content: space-between;
 
 }
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.home-section {
+  width: 100%;
+  margin-top: 80px;
+  overflow-y: scroll;
+  padding-inline: var(--spacing);
+  height: calc(100vh - 80px);
+  padding-block: var(--spacing);
+}
+
+
 .selectionDiv {
   cursor: pointer;
   display: inline-block;
