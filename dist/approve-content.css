@@ -22,7 +22,7 @@
   padding: var(--formspacing);
   background-color: #ffffff;
   border-radius: var(--formBorderRadius);
-  box-shadow: 0px 3px 6px #000000;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
 .formSection .submissions .tooltip-container {
   margin-top: 0px !important;
@@ -40,7 +40,7 @@
   width: 13px;
   height: 13px;
   margin-left: 10px;
-  margin-top: -5px;
+  margin-bottom: 6px;
 }
 .formSection .columnDivs .tooltip-container,
 .formSection .columnDivsCheckBox .tooltip-container,
@@ -460,39 +460,6 @@
   margin-top: -1px;
   margin-left: -1px;
   margin-right: 12px !important;
-}
-
-.home-section .formheadingSection {
-  display: flex;
-  margin-bottom: 20px;
-  align-items: center;
-  gap: 10px;
-}
-.home-section .formheadingSection img {
-  width: 30px;
-  height: 30px;
-}
-.home-section .formheadingSection h1 {
-  font-size: 24px;
-  color: #1a5193;
-  font-weight: 700;
-  white-space: nowrap;
-  text-wrap: nowrap;
-  margin-bottom: 0px;
-}
-.home-section .formheadingSection hr {
-  height: 4px;
-  width: 100%;
-  margin-top: unset;
-  border-top: unset;
-  margin-bottom: 0px;
-  opacity: 1;
-  border-bottom: 3px solid #1a5193;
-}
-.home-section .copyRight {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #898989;
 }
 
 @media (max-width: 1055px) {
