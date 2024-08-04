@@ -34,6 +34,7 @@ function serve(done) {
     browserSync.init({
         server: {
             baseDir: './', // Serve files from the root directory
+            index: 'routes.html',
             routes: {
                 '/pages': 'pages', // Serve pages directory as /pages
                 '/Images': 'Images' // Serve Images directory as /Images

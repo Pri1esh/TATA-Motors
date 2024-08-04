@@ -13,7 +13,7 @@
   width: 70px;
 }
 
-.my-contri-card {
+.team-contri-card {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 20px;
   width: 100%;
@@ -22,12 +22,12 @@
   margin-top: calc(20px + var(--tab-height) / 2);
   position: relative;
 }
-.my-contri-card .my-contri-header {
+.team-contri-card .team-contri-header {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.my-contri-card .my-contri-header .my-contri-head {
+.team-contri-card .team-contri-header .team-contri-head {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -35,7 +35,7 @@
   min-height: var(--tab-height);
   margin-top: calc(var(--tab-height) / -2);
 }
-.my-contri-card .my-contri-header .my-contri-head .my-contri-tab {
+.team-contri-card .team-contri-header .team-contri-head .team-contri-tab {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,10 +43,10 @@
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 10px;
   padding: 15px;
-  width: 280px;
-  max-width: 280px;
+  width: 300px;
+  max-width: 300px;
 }
-.my-contri-card .my-contri-header .my-contri-head .my-contri-tab .tab-data {
+.team-contri-card .team-contri-header .team-contri-head .team-contri-tab .tab-data {
   font-size: 21px;
   line-height: 28px;
   letter-spacing: 0;
@@ -56,52 +56,48 @@
   font-weight: 500;
   width: 50%;
 }
-.my-contri-card .my-contri-header .my-contri-head .my-contri-tab .tab-no {
+.team-contri-card .team-contri-header .team-contri-head .team-contri-tab .tab-no {
   font-size: 38px;
   line-height: 50px;
   font-weight: 600;
   letter-spacing: 0;
   margin-bottom: 0;
 }
-.my-contri-card .my-contri-header .my-contri-head .my-contri-tab.tab-1 {
-  border: 2px solid #AF6026;
-  color: #AF6026;
-}
-.my-contri-card .my-contri-header .my-contri-head .my-contri-tab.tab-2 {
+.team-contri-card .team-contri-header .team-contri-head .team-contri-tab.tab-1 {
   border: 2px solid #967B1F;
   color: #967B1F;
 }
-.my-contri-card .my-contri-header .my-contri-head .my-contri-tab.tab-3 {
+.team-contri-card .team-contri-header .team-contri-head .team-contri-tab.tab-2 {
+  border: 2px solid #AF6026;
+  color: #AF6026;
+}
+.team-contri-card .team-contri-header .team-contri-head .team-contri-tab.tab-3 {
   border: 2px solid #397304;
   color: #397304;
 }
-.my-contri-card .my-contri-header .my-contri-head .my-contri-tab.tab-4 {
-  border: 2px solid #B30C59;
-  color: #B30C59;
-}
-.my-contri-card .my-contri-header .my-contri-head .my-contri-tab.tab-5 {
+.team-contri-card .team-contri-header .team-contri-head .team-contri-tab.tab-4 {
   border: 2px solid #103F74;
   color: #103F74;
 }
-.my-contri-card .table-box {
+.team-contri-card .table-box {
   padding: var(--spacing);
   overflow: hidden;
 }
-.my-contri-card .table-box .my-contri-table {
+.team-contri-card .table-box .team-contri-table {
   width: 100%;
   max-height: calc(100vh - (200px + 3 * var(--spacing) + 90px));
   overflow: scroll;
 }
-.my-contri-card .table-box .my-contri-table table {
+.team-contri-card .table-box .team-contri-table table {
   width: 100%;
 }
-.my-contri-card .table-box .my-contri-table table tbody .table-head {
+.team-contri-card .table-box .team-contri-table table tbody .table-head {
   position: sticky;
   top: -1px;
   z-index: 10;
   box-shadow: 0px 1px 0px 0px #919191;
 }
-.my-contri-card .table-box .my-contri-table table tbody .table-head th {
+.team-contri-card .table-box .team-contri-table table tbody .table-head th {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0;
@@ -111,108 +107,114 @@
   padding-bottom: 20px;
   vertical-align: baseline;
 }
-.my-contri-card .table-box .my-contri-table table tbody .table-head th:first-child {
+.team-contri-card .table-box .team-contri-table table tbody .table-head th:first-child {
   position: sticky;
   padding-right: 0;
   left: -1px;
 }
-.my-contri-card .table-box .my-contri-table table tbody .table-row td {
+.team-contri-card .table-box .team-contri-table table tbody .table-row td {
   padding-right: 5%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   vertical-align: baseline;
   padding-top: 10px;
   padding-bottom: 50px;
 }
-.my-contri-card .table-box .my-contri-table table tbody .table-row td:first-child {
+.team-contri-card .table-box .team-contri-table table tbody .table-row td:first-child {
   position: sticky;
   padding-right: 0;
   left: -1px;
 }
-.my-contri-card .table-box .my-contri-table table tbody .td-md {
+.team-contri-card .table-box .team-contri-table table tbody .td-md {
   width: 14%;
 }
-.my-contri-card .table-box .my-contri-table table tbody .td-sm {
+.team-contri-card .table-box .team-contri-table table tbody .td-sm {
   width: 7%;
 }
 
 /* Tablet ----------------------------------------------- */
 @media (max-width: 1200px) and (min-width: 768px) {
-  .my-contri-table {
-    max-height: calc(100vh - (200px + 5 * var(--spacing) + 200px)) !important;
+  .team-contri-table {
+    max-height: calc(100vh - (200px + 5 * var(--spacing) + 70px)) !important;
   }
-  .my-contri-table table tr td {
+  .team-contri-table table tr th:first-child {
+    border-bottom: 3px solid #8b8b8b;
+  }
+  .team-contri-table table tr td {
     padding-right: 3% !important;
     min-width: 120px;
   }
-  .my-contri-table table tr td:last-child {
+  .team-contri-table table tr td:last-child {
     padding-right: 0 !important;
   }
-  .my-contri-table table tr .description {
+  .team-contri-table table tr .description {
     min-width: 180px;
   }
 }
 /* Mobile ----------------------------------------------- */
 @media (max-width: 767px) {
-  .my-contri-table table tr td {
+  .team-contri-table table tr th:first-child {
+    border-bottom: 3px solid #8b8b8b;
+  }
+  .team-contri-table table tr td {
     min-width: 120px;
   }
-  .my-contri-table table tr td:last-child {
+  .team-contri-table table tr td:last-child {
     padding-right: 0 !important;
   }
-  .my-contri-table table tr .description {
+  .team-contri-table table tr .description {
     min-width: 180px;
   }
-  .my-contri-tab {
+  .team-contri-tab {
     width: 42% !important;
     flex-direction: column !important;
   }
-  .my-contri-tab .tab-data {
+  .team-contri-tab .tab-data {
     width: 100% !important;
     text-align: center !important;
   }
-  .my-contri-tab .tab-no {
+  .team-contri-tab .tab-no {
     font-size: 32px !important;
   }
 }
 /* Screen resolution 125% ----------------------------------------------- */
 @media (min-resolution: 1.25dppx) {
-  .my-contri-card {
+  .team-contri-card {
     zoom: 0.9;
   }
-  .my-contri-card .table-box .my-contri-table {
+  .table-box .team-contri-table {
     min-height: 500px;
   }
-  .my-contri-card .table-box table tr th {
+  .table-box table tr th {
     white-space: nowrap;
   }
-  .my-contri-card .table-box table tr .td-md {
+  .table-box table tr .td-md {
     width: 13%;
   }
-  .my-contri-card .table-box table tr .td-sm {
+  .table-box table tr .td-sm {
     width: 8% !important;
   }
 }
 /* Screen resolution 150% ----------------------------------------------- */
 @media (max-resolution: 1.5dppx) and (min-resolution: 1.3dppx) {
-  .my-contri-card .my-contri-header {
+  .team-contri-card .team-contri-header {
     zoom: 0.7;
   }
-  .my-contri-card .table-box {
+  .team-contri-card .table-box {
     zoom: 0.8;
   }
-  .my-contri-card .table-box .my-contri-table {
+  .team-contri-card .table-box .team-contri-table {
     min-height: 500px;
   }
-  .my-contri-card .table-box table tr th {
+  .team-contri-card .table-box table tr th {
     white-space: nowrap;
   }
-  .my-contri-card .table-box table tr .td-md {
+  .team-contri-card .table-box table tr .td-md {
     width: 12%;
   }
-  .my-contri-card .table-box table tr .td-sm {
+  .team-contri-card .table-box table tr .td-sm {
     width: 9% !important;
   }
-  .my-contri-card .Add-ring {
+  .team-contri-card .Add-ring {
     zoom: 0.8;
   }
 }

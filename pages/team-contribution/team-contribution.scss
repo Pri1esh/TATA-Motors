@@ -14,7 +14,7 @@
     }
  } 
 
-.my-contri-card{
+.team-contri-card{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 20px;
     width: 100%;
@@ -23,12 +23,12 @@
     margin-top: calc(20px + var(--tab-height) / 2);
     position: relative;
 
-    .my-contri-header{
+    .team-contri-header{
         width: 100%;
         display: flex;
         justify-content: center;
 
-        .my-contri-head{
+        .team-contri-head{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -37,7 +37,7 @@
             margin-top: calc(var(--tab-height)/-2);
 
     
-            .my-contri-tab{
+            .team-contri-tab{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -45,8 +45,8 @@
                 background: #FFFFFF 0% 0% no-repeat padding-box;
                 border-radius: 10px;
                 padding: 15px;
-                width: 280px;
-                max-width: 280px;
+                width: 300px;
+                max-width: 300px;
                 
     
                 .tab-data{
@@ -68,22 +68,18 @@
                     margin-bottom: 0;
                 }
                 &.tab-1{
-                    border: 2px solid #AF6026;
-                    color: #AF6026;
-                }
-                &.tab-2{
                     border: 2px solid #967B1F;
                     color: #967B1F;
+                }
+                &.tab-2{
+                    border: 2px solid #AF6026;
+                    color: #AF6026;
                 }
                 &.tab-3{
                     border: 2px solid #397304;
                     color: #397304;
                 }
                 &.tab-4{
-                    border: 2px solid #B30C59;
-                    color: #B30C59;
-                }
-                &.tab-5{
                     border: 2px solid #103F74;
                     color: #103F74;
                 }
@@ -95,7 +91,7 @@
     .table-box{
         padding: var(--spacing);
         overflow: hidden;
-        .my-contri-table{
+        .team-contri-table{
             width: 100%;
             max-height: calc(100vh - (200px + 3* var(--spacing) + 90px));
             overflow:scroll ;
@@ -108,7 +104,6 @@
                         top: -1px;
                         z-index: 10;
                         box-shadow: 0px 1px 0px 0px #919191;
-
                         th{
                             font-size: 18px;
                             line-height: 20px;
@@ -153,7 +148,6 @@
                     }
                 }
             }
-            
         }
     }
 
@@ -162,13 +156,14 @@
 
 /* Tablet ----------------------------------------------- */
 @media (max-width: 1200px) and (min-width: 768px) {
-
-    .my-contri-table{
-        max-height: calc(100vh - (200px + 5* var(--spacing) + 200px)) !important;
-
+    .team-contri-table{
+        max-height: calc(100vh - (200px + 5* var(--spacing) + 70px)) !important;
         table{
             
             tr{
+                th:first-child{
+                    border-bottom: 3px solid #8b8b8b;
+                }
                 td{
                     padding-right: 3% !important;
                     min-width: 120px;
@@ -186,10 +181,12 @@
 
 /* Mobile ----------------------------------------------- */
 @media (max-width: 767px) {
-
-    .my-contri-table{
+    .team-contri-table{
         table{
             tr{
+                th:first-child{
+                    border-bottom: 3px solid #8b8b8b;
+                }
                 td{
                     min-width: 120px;
                     &:last-child{
@@ -203,7 +200,7 @@
         }
     }
 
-    .my-contri-tab{
+    .team-contri-tab{
         width: 42% !important;
         flex-direction: column !important;
         .tab-data{
@@ -220,24 +217,23 @@
 
   /* Screen resolution 125% ----------------------------------------------- */
   @media (min-resolution: 1.25dppx) {
-    .my-contri-card{
+    .team-contri-card{
         zoom: 0.9;
-
-        .table-box{
-            .my-contri-table{
-                min-height: 500px;
-            }
-            table{
-                tr{
-                    th{
-                        white-space: nowrap;
-                    }
-                    .td-md{
-                        width: 13%;
-                    }
-                    .td-sm{
-                        width: 8% !important;
-                    }
+    }
+    .table-box{
+        .team-contri-table{
+            min-height: 500px;
+        }
+        table{
+            tr{
+                th{
+                    white-space: nowrap;
+                }
+                .td-md{
+                    width: 13%;
+                }
+                .td-sm{
+                    width: 8% !important;
                 }
             }
         }
@@ -247,18 +243,16 @@
   /* Screen resolution 150% ----------------------------------------------- */
   
   @media (max-resolution: 1.5dppx) and (min-resolution: 1.3dppx) {
-    .my-contri-card{
-        .my-contri-header{
+    .team-contri-card{
+        .team-contri-header{
             zoom: 0.7;
         }
 
         .table-box{
-            zoom: 0.8;
-
-            .my-contri-table{
+            .team-contri-table{
                 min-height: 500px;
             }
-
+            zoom: 0.8;
             table{
                 tr{
                     th{
