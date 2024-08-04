@@ -22,7 +22,7 @@
   padding: var(--formspacing);
   background-color: #ffffff;
   border-radius: var(--formBorderRadius);
-  box-shadow: 0px 3px 6px #000000;
+  box-shadow: 0px 3px 6px #00000029;
 
   .submissions {
     .tooltip-container {
@@ -36,7 +36,7 @@
       width: 13px;
       height: 13px;
       margin-left: 10px;
-      margin-top: -5px;
+      margin-bottom: 6px;
     }
     /* Tooltip container */
     .tooltip-container {
@@ -606,41 +606,7 @@
   }
 }
 
-.home-section {
-  .formheadingSection {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-    gap: 10px;
 
-    img {
-      width: 30px;
-      height: 30px;
-    }
-    h1 {
-      font-size: 24px;
-      color: #1a5193;
-      font-weight: 700;
-      white-space: nowrap;
-      text-wrap: nowrap;
-      margin-bottom: 0px;
-    }
-    hr {
-      height: 4px;
-      width: 100%;
-      margin-top: unset;
-      border-top: unset;
-      margin-bottom: 0px;
-      opacity: 1;
-      border-bottom: 3px solid #1a5193;
-    }
-  }
-  .copyRight {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #898989;
-  }
-}
 
 @media (max-width: 1055px) {
   .formSection .columnDivsCheckBox .checkBoxFlex .form-check {
