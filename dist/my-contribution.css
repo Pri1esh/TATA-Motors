@@ -1,13 +1,28 @@
 :root {
   --spacing: 25px;
+  --tab-height: 86px;
 }
 
-.my-contri-card .my-contri-head {
+.my-contri-card {
+  background: red 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 300px;
+  margin-top: calc(var(--tab-height) / 2);
+}
+.my-contri-card .my-contri-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.my-contri-card .my-contri-header .my-contri-head {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  min-height: var(--tab-height);
+  margin-top: calc(var(--tab-height) / -2);
 }
-.my-contri-card .my-contri-head .my-contri-tab {
+.my-contri-card .my-contri-header .my-contri-head .my-contri-tab {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,15 +30,55 @@
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 10px;
   padding: 15px;
+  min-width: 300px;
 }
-.my-contri-card .my-contri-head .my-contri-tab .tab-data {
+.my-contri-card .my-contri-header .my-contri-head .my-contri-tab .tab-data {
   font-size: 21px;
   line-height: 28px;
   letter-spacing: 0;
   text-align: left;
+  margin-bottom: 0;
+  white-space: wrap;
+  font-weight: 500;
+  width: 50%;
 }
-.my-contri-card .my-contri-head .my-contri-tab .tab-no {
+.my-contri-card .my-contri-header .my-contri-head .my-contri-tab .tab-no {
   font-size: 38px;
   line-height: 50px;
   letter-spacing: 0;
+  margin-bottom: 0;
+}
+.my-contri-card .my-contri-table {
+  width: 100%;
+  padding: var(--spacing);
+  overflow-x: scroll;
+}
+.my-contri-card .my-contri-table table {
+  width: 100%;
+}
+.my-contri-card .my-contri-table table tbody .table-head th {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: #B30C58;
+  border: 1px solid #ccc;
+}
+.my-contri-card .my-contri-table table tbody .table-head th:first-child {
+  position: sticky;
+  left: 0;
+}
+.my-contri-card .my-contri-table table tbody .table-row td {
+  border: 1px solid #ccc;
+  padding-right: 5%;
+}
+.my-contri-card .my-contri-table table tbody .table-row td:first-child {
+  position: sticky;
+  left: 0;
+}
+.my-contri-card .my-contri-table table tbody .td-md {
+  width: 15.3%;
+}
+.my-contri-card .my-contri-table table tbody .td-sm {
+  width: 7.7%;
 }
