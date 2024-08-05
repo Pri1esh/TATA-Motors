@@ -845,13 +845,89 @@
 
     </div>
     <div class="stickyPopup">
-      <img src="/Images/Icon fa-solid-square-poll-vertical.svg" />
+      <img src="/Images/Icon fa-solid-square-poll-vertical.svg" id="popupImage" />
     </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog popupModal">
+          <div class="modal-content">
+              <div class="modal-header">
+                <h1>Poll | <a>View past polls</a></h1>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <div class="poll">
+                  <h3>Which AI/ML application do you find most promising for the automobile industry?</h3>
+                  <div class="option">
+                      <input type="checkbox" name="poll" value="0" id="autonomous-driving">
+                      <div>
+                          <label for="autonomous-driving">Autonomous Driving</label>
+                          <div class="progressDiv">
+                              <div class="progress" style="width: 35%;"></div>
+                              <span class="progressText">35%</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="option">
+                      <input type="checkbox" name="poll" value="1" id="predictive-maintenance">
+                      <div>
+                          <label for="predictive-maintenance">Predictive Maintenance</label>
+                          <div class="progressDiv">
+                              <div class="progress" style="width: 63%;"></div>
+                              <span class="progressText">63%</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="option">
+                      <input type="checkbox" name="poll" value="2" id="supply-chain-optimisation">
+                      <div>
+                          <label for="supply-chain-optimisation">Supply Chain Optimisation</label>
+                          <div class="progressDiv">
+                              <div class="progress" style="width: 28%;"></div>
+                              <span class="progressText">28%</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="option">
+                      <input type="checkbox" name="poll" value="3" id="customer-experience-personalisation">
+                      <div>
+                          <label for="customer-experience-personalisation">Customer Experience Personalisation</label>
+                          <div class="progressDiv">
+                              <div class="progress" style="width: 84%;"></div>
+                              <span class="progressText">84%</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="option">
+                      <input type="checkbox" name="poll" value="4" id="production-automation">
+                      <div>
+                          <label for="production-automation">Production Automation</label>
+                          <div class="progressDiv">
+                              <div class="progress" style="width: 15%;"></div>
+                              <span class="progressText">15%</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+             
+          </div>
+      </div>
+  </div>
+
     <div class="overlay"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="../../Scripts/script.js" ></script>
     <script src="../../Scripts/home.js" ></script>
   </body>

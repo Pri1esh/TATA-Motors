@@ -75,3 +75,44 @@ const myContriTabs = document.getElementsByClassName("myContriTab");
       $('.' + id).show();
     });
   });
+
+  document.getElementById('popupImage').addEventListener('click', function () {
+    $('#myModal').modal('show');
+});
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const pollOptions = document.querySelectorAll('input[name="poll"]');
+    const progressBars = document.querySelectorAll('.progress');
+    const percentageTexts = document.querySelectorAll('.progressText');
+    const percentages = [35, 63, 28, 84, 15]; // Initial percentages
+
+    // Update the progress bar and percentage text
+    function updateProgress(index, change) {
+        const progressBar = progressBars[index];
+        const percentageText = percentageTexts[index];
+        let currentPercentage = parseInt(percentageText.textContent);
+
+        currentPercentage += change;
+
+        // Ensure the percentage stays within 0-100 range
+        currentPercentage = Math.max(0, Math.min(100, currentPercentage));
+
+        progressBar.style.width = currentPercentage + '%';
+        percentageText.textContent = currentPercentage + '%';
+    }
+
+    pollOptions.forEach((option, index) => {
+        option.addEventListener('change', (event) => {
+            const progressBar = progressBars[index];
+            if (event.target.checked) {
+                progressBar.classList.add('selected');
+                option.classList.add('selected-checkbox');
+                updateProgress(index, 1);
+            } else {
+                progressBar.classList.remove('selected');
+                option.classList.remove('selected-checkbox');
+                updateProgress(index, -1);
+            }
+        });
+    });
+});

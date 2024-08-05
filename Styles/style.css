@@ -402,6 +402,7 @@ hr {
 
 .stickyPopup {
   position: fixed;
+  cursor: pointer;
   width: 5rem;
   height: 5rem;
   box-shadow: 0px 0px 26px #C95AB5;
@@ -865,6 +866,33 @@ hr {
 }
 
 
+
+/* Screen resolution 150% ----------------------------------------------- */
+
+@media (max-resolution: 1.5dppx) and (min-resolution: 1.3dppx) {
+  header {
+    zoom: 0.8;
+  }
+  .tab-row {
+    zoom: 0.8;
+  }
+  .leadershipPosts {
+    zoom: 1.1;
+  }
+  nav {
+    zoom: 0.8;
+    height: 125vh !important;
+  }
+  .home-section {
+    margin-top: 64px !important;
+  }
+ 
+
+
+.home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight  {
+  zoom:0.8;
+}
+}
 
 
 

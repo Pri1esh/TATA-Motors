@@ -87,7 +87,7 @@
 }
 .formSection .customRows .uploadDiv {
   border: 1px solid #c7c7c7;
-  height: 40px !important;
+  height: 40px;
   border-radius: 9px;
 }
 .formSection .customRows .upload-container {
@@ -442,7 +442,7 @@
 .formSection .submissionsDiv .uploadDiv {
   border: 1px solid #c7c7c7;
   border-radius: 9px;
-  height: 40px !important;
+  height: 40px;
   margin-top: 5px;
   width: 100%;
 }
