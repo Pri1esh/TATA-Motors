@@ -141,6 +141,11 @@ header .headerMainDiv {
   border-radius: 20px;
   background-color: white;
   height: fit-content;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 5px;
 }
 header .searchDiv input {
   border-inline: none;
@@ -151,7 +156,7 @@ header .searchDiv input {
  
 }
 header .searchDiv svg{
-  margin-top: -3px;
+  margin-right:8px;
 }
 
 header .searchDiv input::placeholder {

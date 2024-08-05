@@ -220,9 +220,42 @@
 .home-section .nuggetSection .postsDiv .pastPosts {
   padding-block: 20px;
 }
+.home-section .nuggetSection .postsDiv .pastPosts .colhidden {
+  display: none;
+}
+.home-section .nuggetSection .postsDiv .pastPosts .seeMore {
+  text-align: end;
+}
+.home-section .nuggetSection .postsDiv .pastPosts .seeMore button {
+  border: none;
+  background-color: transparent;
+  color: #1A5193;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.home-section .nuggetSection .postsDiv .pastPosts .postCol:nth-child(odd) {
+  padding-right: 0px;
+}
+.home-section .nuggetSection .postsDiv .pastPosts .postCol:nth-child(even) {
+  padding-left: 0px;
+}
+.home-section .nuggetSection .postsDiv .pastPosts .flexDiv {
+  display: flex;
+  gap: 10px;
+  padding-block: 20px;
+  border-bottom: 1px solid #8d8d8d;
+}
 .home-section .nuggetSection .postsDiv .pastPosts .flexDiv img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+}
+.home-section .nuggetSection .postsDiv .pastPosts .flexDiv p {
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.home-section .nuggetSection .postsDiv .pastPosts .flexDiv span {
+  font-weight: 400;
 }
 @media (max-width: 1100px) {
   .home-section .nuggetData {

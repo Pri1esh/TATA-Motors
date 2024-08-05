@@ -235,10 +235,43 @@
 
         .pastPosts{
           padding-block: 20px;
+          .colhidden {
+            display: none;
+          }
+
+          .seeMore{
+            text-align: end;
+            button{
+              border: none;
+              background-color: transparent;
+              color: #1A5193;
+              font-size: 16px;
+              font-weight: 500;
+              text-decoration: underline;
+            }
+          }
+          .postCol:nth-child(odd){
+            padding-right: 0px;
+          }
+          .postCol:nth-child(even){
+            padding-left: 0px;
+          }
           .flexDiv{
+            display: flex;
+            gap:10px;
+            padding-block: 20px;
+            border-bottom: 1px solid #8d8d8d;
+            
             img{
-              width: 60px;
-              height: 60px;
+              width: 50px;
+              height: 50px;
+            }
+            p{
+              margin-bottom: 0px;
+              font-weight: 600;
+            }
+            span{
+              font-weight: 400;
             }
           }
         }

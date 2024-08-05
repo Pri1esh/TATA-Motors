@@ -80,39 +80,48 @@ const myContriTabs = document.getElementsByClassName("myContriTab");
     $('#myModal').modal('show');
 });
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const pollOptions = document.querySelectorAll('input[name="poll"]');
-    const progressBars = document.querySelectorAll('.progress');
-    const percentageTexts = document.querySelectorAll('.progressText');
-    const percentages = [35, 63, 28, 84, 15]; // Initial percentages
+document.addEventListener('DOMContentLoaded', () => {
+  const pollOptions = document.querySelectorAll('input[name="poll"]');
+  const progressBars = document.querySelectorAll('.progress');
+  const percentageTexts = document.querySelectorAll('.progressText');
 
-    // Update the progress bar and percentage text
-    function updateProgress(index, change) {
-        const progressBar = progressBars[index];
-        const percentageText = percentageTexts[index];
-        let currentPercentage = parseInt(percentageText.textContent);
+  // Set initial progress bar widths based on data-bs-target
+  progressBars.forEach((progressBar, index) => {
+    const targetPercentage = parseInt(progressBar.getAttribute('data-bs-target'));
+    progressBar.style.width = targetPercentage + '%';
+    percentageTexts[index].textContent = targetPercentage + '%';
+  });
 
-        currentPercentage += change;
+  // Update the progress bar, percentage text, and background color
+  function updateProgress(index, change, isChecked) {
+    const progressBar = progressBars[index];
+    const percentageText = percentageTexts[index];
+    let currentPercentage = parseInt(percentageText.textContent);
 
-        // Ensure the percentage stays within 0-100 range
-        currentPercentage = Math.max(0, Math.min(100, currentPercentage));
+    currentPercentage += change;
 
-        progressBar.style.width = currentPercentage + '%';
-        percentageText.textContent = currentPercentage + '%';
+    // Ensure the percentage stays within 0-100 range
+    currentPercentage = Math.max(0, Math.min(100, currentPercentage));
+
+    progressBar.setAttribute('data-bs-target', currentPercentage);
+    progressBar.style.width = currentPercentage + '%';
+    percentageText.textContent = currentPercentage + '%';
+
+    // Change background color based on checkbox selection
+    if (isChecked) {
+      progressBar.classList.add('selected');
+    } else {
+      progressBar.classList.remove('selected');
     }
+  }
 
-    pollOptions.forEach((option, index) => {
-        option.addEventListener('change', (event) => {
-            const progressBar = progressBars[index];
-            if (event.target.checked) {
-                progressBar.classList.add('selected');
-                option.classList.add('selected-checkbox');
-                updateProgress(index, 1);
-            } else {
-                progressBar.classList.remove('selected');
-                option.classList.remove('selected-checkbox');
-                updateProgress(index, -1);
-            }
-        });
+  pollOptions.forEach((option, index) => {
+    option.addEventListener('change', (event) => {
+      if (event.target.checked) {
+        updateProgress(index, 1, true);
+      } else {
+        updateProgress(index, -1, false);
+      }
     });
+  });
 });

@@ -127,6 +127,44 @@
     
 
 
+    let posts = document.querySelectorAll('.postCol');
+    let seeMoreBtn = document.getElementById('seeMoreBtn');
+    let postsPerPage = 4;
+    let currentPage = 0;
+  
+    function showPosts(page) {
+      let end = (page + 1) * postsPerPage;
+      for (let i = 0; i < end && i < posts.length; i++) {
+        posts[i].classList.remove('colhidden');
+      }
+      if (end >= posts.length) {
+        seeMoreBtn.textContent = 'See Less';
+      } else {
+        seeMoreBtn.textContent = 'See More';
+      }
+    }
+  
+    function hidePosts() {
+      for (let i = postsPerPage; i < posts.length; i++) {
+        posts[i].classList.add('colhidden');
+      }
+      seeMoreBtn.textContent = 'See More';
+    }
+  
+    // Initially hide all posts except the first set
+    hidePosts();
+  
+    seeMoreBtn.addEventListener('click', function() {
+      if (seeMoreBtn.textContent === 'See More') {
+        currentPage++;
+        showPosts(currentPage);
+      } else {
+        currentPage = 0;
+        hidePosts();
+      }
+    });
+
+  
 
 
 

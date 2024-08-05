@@ -895,12 +895,13 @@ hr {
  
 
 
-.home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight  {
+.home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight,.popupModal  {
   zoom:0.8;
 }
 .formSection .columnDivs .tooltip-content{
   min-width: 450px !important;
 }
+
 }
 
 
