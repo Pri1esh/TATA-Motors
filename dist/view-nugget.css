@@ -217,6 +217,13 @@
 .home-section .nuggetSection .postsDiv .newPost .uploadnewPost .postBtn:focus-visible {
   outline: none;
 }
+.home-section .nuggetSection .postsDiv .pastPosts {
+  padding-block: 20px;
+}
+.home-section .nuggetSection .postsDiv .pastPosts .flexDiv img {
+  width: 60px;
+  height: 60px;
+}
 @media (max-width: 1100px) {
   .home-section .nuggetData {
     display: block !important;

@@ -232,6 +232,16 @@
                 }
             }
         }
+
+        .pastPosts{
+          padding-block: 20px;
+          .flexDiv{
+            img{
+              width: 60px;
+              height: 60px;
+            }
+          }
+        }
     }
   }
 

@@ -86,7 +86,7 @@
 .team-contri-card .table-box .team-contri-table {
   width: 100%;
   max-height: calc(100vh - (200px + 3 * var(--spacing) + 90px));
-  overflow: scroll;
+  overflow: auto;
 }
 .team-contri-card .table-box .team-contri-table table {
   width: 100%;
@@ -111,6 +111,9 @@
   position: sticky;
   padding-right: 0;
   left: -1px;
+}
+.team-contri-card .table-box .team-contri-table table tbody .table-row.table-row:nth-child(odd) td {
+  background-color: #F7F7F7 !important;
 }
 .team-contri-card .table-box .team-contri-table table tbody .table-row td {
   padding-right: 5%;

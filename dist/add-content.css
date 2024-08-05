@@ -118,16 +118,26 @@
   min-width: 100px; /* Minimum width for each checkbox container */
 }
 .formSection .columnDivsCheckBox .checkBoxFlex .form-check .form-check-input {
-  margin-left: -3.25rem;
   transform: scale(1.5);
+  background-color: #ffffff;
+  border: 1px solid #707070;
   /* -webkit-transform: scale(1.5); */
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
 }
+.formSection .columnDivsCheckBox .checkBoxFlex .form-check .form-check-input:checked[type=checkbox] {
+  border: 1px solid #707070;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-check%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M10.97%204.97a.75.75%200%200%201%201.07%201.05l-3.99%204.99a.75.75%200%200%201-1.08.02L4.324%208.384a.75.75%200%201%201%201.06-1.06l2.094%202.093%203.473-4.425z%22%2F%3E%3C%2Fsvg%3E");
+}
+.formSection .columnDivsCheckBox .checkBoxFlex .form-check .form-check-input:focus {
+  box-shadow: none;
+  border: 1px solid #707070;
+}
 .formSection .columnDivsCheckBox .checkBoxFlex .form-check label {
   display: block;
   color: #000000;
+  margin-left: 10px;
 }
 .formSection input[type=file]::-webkit-file-upload-button {
   background: none;
@@ -169,8 +179,7 @@
 .formSection .columnDivs input[type=file]::-webkit-file-upload-button,
 .formSection .columnDivsCheckBox input[type=file]::-webkit-file-upload-button {
   width: 25%;
-  line-height: 39px !important;
-  margin-top: -1px;
+  line-height: 26px !important;
   margin-left: -1px;
   margin-right: 12px !important;
 }
@@ -191,6 +200,7 @@
 .formSection .columnDivs input[type=text].filled,
 .formSection .columnDivsCheckBox input[type=text].filled {
   background-color: #f4f4f4 !important; /* Change to desired color */
+  color: #000000;
 }
 .formSection .columnDivs .selectInput,
 .formSection .columnDivsCheckBox .selectInput {
@@ -268,8 +278,17 @@
   -moz-transform: scale(1.5); /* Firefox */
   -ms-transform: scale(1.5); /* IE 9 */
   -o-transform: scale(1.5); /* Opera */
-  margin-right: 10px; /* Adjust spacing as needed */
   margin-top: 7px;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+}
+.formSection .submissionsDiv .previewCheck .large-checkbox:checked[type=checkbox] {
+  border: 1px solid #707070;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-check%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M10.97%204.97a.75.75%200%200%201%201.07%201.05l-3.99%204.99a.75.75%200%200%201-1.08.02L4.324%208.384a.75.75%200%201%201%201.06-1.06l2.094%202.093%203.473-4.425z%22%2F%3E%3C%2Fsvg%3E");
+}
+.formSection .submissionsDiv .previewCheck .large-checkbox:focus {
+  box-shadow: none;
+  border: 1px solid #707070;
 }
 .formSection .submissionsDiv .uploadToggle {
   gap: 50px;
@@ -395,8 +414,7 @@
 }
 .formSection .submissionsDiv .uploadDiv input[type=file]::-webkit-file-upload-button {
   width: 25%;
-  line-height: 39px !important;
-  margin-top: -1px;
+  line-height: 28px !important;
   margin-left: -1px;
   margin-right: 12px !important;
 }

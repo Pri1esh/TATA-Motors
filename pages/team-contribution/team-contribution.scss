@@ -94,7 +94,7 @@
         .team-contri-table{
             width: 100%;
             max-height: calc(100vh - (200px + 3* var(--spacing) + 90px));
-            overflow:scroll ;
+            overflow:auto ;
     
             table{
                 width: 100%;
@@ -123,6 +123,10 @@
                     }
         
                     .table-row{
+                        &.table-row:nth-child(odd) td{
+                            background-color:#F7F7F7 !important;
+                        }
+                        
                         td{
                             padding-right: 5%;
                             background: #FFFFFF 0% 0% no-repeat padding-box;

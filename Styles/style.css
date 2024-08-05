@@ -865,7 +865,13 @@ hr {
  
 }
 
+.formSection .historyContent .commentTable thead tr {
+  border-color: #707070;
+}
 
+.formSection .historyContent .commentTable tbody tr:last-child {
+  border-color: #F7F7F7;
+}
 
 /* Screen resolution 150% ----------------------------------------------- */
 
@@ -891,6 +897,9 @@ hr {
 
 .home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight  {
   zoom:0.8;
+}
+.formSection .columnDivs .tooltip-content{
+  min-width: 450px !important;
 }
 }
 
