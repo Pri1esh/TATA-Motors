@@ -855,10 +855,10 @@ hr {
   content: '';
   display: block;
   position: absolute;
-  top: 2px;
-  left: 9px;
+  top: 1px;
+  left: 5px;
   width: 6px;
-  height: 14px;
+  height: 12px;
   border: solid #0079bf;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
@@ -895,7 +895,7 @@ hr {
  
 
 
-.home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight,.popupModal  {
+.home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight,.popupModal,.portLandStartupPage  {
   zoom:0.8;
 }
 .formSection .columnDivs .tooltip-content{
