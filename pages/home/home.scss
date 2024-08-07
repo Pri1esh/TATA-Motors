@@ -46,6 +46,18 @@
     grid-row: 3;
   }
   
+  .tab-row{
+    .trendings{
+      img{
+        width: 148px;
+        height: 128px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+  }
+
+
   /* Home Cards End */
   
   .engagementSection {

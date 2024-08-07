@@ -124,6 +124,8 @@
                                 left: -1px;
                             } 
                         }
+
+                       
                         
                     }
         
@@ -132,7 +134,7 @@
                             background-color:#F7F7F7 !important;
                         }
                         td{
-                            padding-right: 5%;
+                            padding-right:8px;
                             background: #FFFFFF 0% 0% no-repeat padding-box;
                             vertical-align: baseline;
                             padding-top: 10px;
@@ -173,7 +175,7 @@
             
             tr{
                 td{
-                    padding-right: 3% !important;
+                    padding-right: 8px !important;
                     min-width: 120px;
                     &:last-child{
                         padding-right: 0 !important;

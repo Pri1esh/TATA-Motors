@@ -47,7 +47,7 @@
                 .selectInput{
                     height: 40px;
                     position: relative;
-                    input[type=text]{
+                    input[type=text],select{
                         background-color: #ffffff;
                         border: 1px solid #c7c7c7;
                         padding: 0;
@@ -216,6 +216,16 @@
                     }
                     
                 }
+            }
+        }
+
+        .floatingIcon{
+            position: absolute;
+            bottom:60px;
+            right: 60px;
+            img{
+                width:60px;
+
             }
         }
     }

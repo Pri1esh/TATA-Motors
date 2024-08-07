@@ -253,7 +253,7 @@
       margin-left: -1px;
       margin-right: 12px !important;
     }
-    input[type="text"] {
+    input[type="text"],select{
       background-color: #ffffff;
       border: 1px solid #c7c7c7;
       padding: 0;
@@ -266,6 +266,8 @@
         outline: none;
       }
     }
+
+   
 
     input[type="text"].filled {
       background-color: #f4f4f4 !important; /* Change to desired color */

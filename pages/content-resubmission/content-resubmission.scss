@@ -250,7 +250,7 @@
       margin-left: -1px;
       margin-right: 12px !important;
     }
-    input[type="text"] {
+    input[type="text"],select{
       background-color: #ffffff;
       border: 1px solid #c7c7c7;
       padding: 0;
@@ -320,6 +320,19 @@
       gap: 40px;
       .approverSelect {
         width: 100%;
+        .approverSelectClass{
+          background-color: #ffffff;
+          border: 1px solid #c7c7c7;
+          padding: 0;
+          width: 100%;
+          border-radius: 9px;
+          height: 40px;
+          padding-inline: 10px;
+    
+          &:focus-visible {
+            outline: none;
+          }
+        }
       }
       .labelClass {
         display: none;

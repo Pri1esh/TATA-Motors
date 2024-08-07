@@ -202,17 +202,13 @@
                                         <div class="tooltip-content">Select “Upload Document” and upload your content file here (Accepted files: Word, Powerpoint, PDF, Video, Image, Excel, etc.). You may select “Knowledge Description” for writing the content directly here.</div>
                                     </div>
                                 </div>
-                                <div class="selectInput">
-                                    <input type="text" value="" class="openDropDown" id="invitees" placeholder="Add Invitees" readonly/> 
-                                    <img src="/Images/arrow-down-svgrepo-com.svg"/>
-                                    <div class="dropDownList">
-                                        <ul>
-                                            <li>test 1</li>
-                                            <li>test 2</li>
-                                            <li>test 3</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <select name="invitees" id="invitees">
+                                  <option value="Select" style="display:none;">Select</option>
+                                  <option value="Level 2">Level 2</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
                                 
                                 
                                       <label>Please enter a title here...</label>
@@ -226,106 +222,21 @@
                               <h2>State Date & Time<span>*</span></h2>
                               <div class="multiSelect">
                                 <input type="date" id="startDate" name="startDate">
-                                <div class="selectInput">
-                                  <input type="text" value="" class="openDropDown" id="startTime" placeholder="00" readonly/> 
-                                  <img src="/Images/arrow-down-svgrepo-com.svg"/>
-                                  <div class="dropDownList">
-                                      <ul>
-                                        <li>12 AM</li>
-                                        <li>1 AM</li>
-                                        <li>2 AM</li>
-                                        <li>3 AM</li>
-                                        <li>4 AM</li>
-                                        <li>5 AM</li>
-                                        <li>6 AM</li>
-                                        <li>7 AM</li>
-                                        <li>8 AM</li>
-                                        <li>9 AM</li>
-                                        <li>10 AM</li>
-                                        <li>11 AM</li>
-                                        <li>12 PM</li>
-                                        <li>1 PM</li>
-                                        <li>2 PM</li>
-                                        <li>3 PM</li>
-                                        <li>4 PM</li>
-                                        <li>5 PM</li>
-                                        <li>6 PM</li>
-                                        <li>7 PM</li>
-                                        <li>8 PM</li>
-                                        <li>9 PM</li>
-                                        <li>10 PM</li>
-                                        <li>11 PM</li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="selectInput">
-                                  <input type="text" value="" class="openDropDown" id="startSec" placeholder="00" readonly/> 
-                                  <img src="/Images/arrow-down-svgrepo-com.svg"/>
-                                  <div class="dropDownList">
-                                      <ul>
-                                        <li>00</li>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                        <li>06</li>
-                                        <li>07</li>
-                                        <li>08</li>
-                                        <li>09</li>
-                                        <li>10</li>
-                                        <li>11</li>
-                                        <li>12</li>
-                                        <li>13</li>
-                                        <li>14</li>
-                                        <li>15</li>
-                                        <li>16</li>
-                                        <li>17</li>
-                                        <li>18</li>
-                                        <li>19</li>
-                                        <li>20</li>
-                                        <li>21</li>
-                                        <li>22</li>
-                                        <li>23</li>
-                                        <li>24</li>
-                                        <li>25</li>
-                                        <li>26</li>
-                                        <li>27</li>
-                                        <li>28</li>
-                                        <li>29</li>
-                                        <li>30</li>
-                                        <li>31</li>
-                                        <li>32</li>
-                                        <li>33</li>
-                                        <li>34</li>
-                                        <li>35</li>
-                                        <li>36</li>
-                                        <li>37</li>
-                                        <li>38</li>
-                                        <li>39</li>
-                                        <li>40</li>
-                                        <li>41</li>
-                                        <li>42</li>
-                                        <li>43</li>
-                                        <li>44</li>
-                                        <li>45</li>
-                                        <li>46</li>
-                                        <li>47</li>
-                                        <li>48</li>
-                                        <li>49</li>
-                                        <li>50</li>
-                                        <li>51</li>
-                                        <li>52</li>
-                                        <li>53</li>
-                                        <li>54</li>
-                                        <li>55</li>
-                                        <li>56</li>
-                                        <li>57</li>
-                                        <li>58</li>
-                                        <li>59</li>
-                                      </ul>
-                                  </div>
-                              </div>
+                                <select name="startTime" id="startTime">
+                                  <option value="Select" style="display:none;">Select</option>
+                                  <option value="Level 2">Level 2</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+                                <select name="startSec" id="startSec">
+                                  <option value="Select" style="display:none;">Select</option>
+                                  <option value="Level 2">Level 2</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+                             
                               </div>
                               <label>Please enter a title here...</label>
                           </div>
@@ -335,106 +246,21 @@
                             <h2>End Date & Time<span>*</span></h2>
                             <div class="multiSelect">
                               <input type="date" id="endDate" name="startDate">
-                              <div class="selectInput">
-                                <input type="text" value="" class="openDropDown" id="endTime" placeholder="00" readonly/> 
-                                <img src="/Images/arrow-down-svgrepo-com.svg"/>
-                                <div class="dropDownList">
-                                    <ul>
-                                      <li>12 AM</li>
-                                      <li>1 AM</li>
-                                      <li>2 AM</li>
-                                      <li>3 AM</li>
-                                      <li>4 AM</li>
-                                      <li>5 AM</li>
-                                      <li>6 AM</li>
-                                      <li>7 AM</li>
-                                      <li>8 AM</li>
-                                      <li>9 AM</li>
-                                      <li>10 AM</li>
-                                      <li>11 AM</li>
-                                      <li>12 PM</li>
-                                      <li>1 PM</li>
-                                      <li>2 PM</li>
-                                      <li>3 PM</li>
-                                      <li>4 PM</li>
-                                      <li>5 PM</li>
-                                      <li>6 PM</li>
-                                      <li>7 PM</li>
-                                      <li>8 PM</li>
-                                      <li>9 PM</li>
-                                      <li>10 PM</li>
-                                      <li>11 PM</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="selectInput">
-                                <input type="text" value="" class="openDropDown" id="endSec" placeholder="00" readonly/> 
-                                <img src="/Images/arrow-down-svgrepo-com.svg"/>
-                                <div class="dropDownList">
-                                    <ul>
-                                      <li>00</li>
-                                      <li>01</li>
-                                      <li>02</li>
-                                      <li>03</li>
-                                      <li>04</li>
-                                      <li>05</li>
-                                      <li>06</li>
-                                      <li>07</li>
-                                      <li>08</li>
-                                      <li>09</li>
-                                      <li>10</li>
-                                      <li>11</li>
-                                      <li>12</li>
-                                      <li>13</li>
-                                      <li>14</li>
-                                      <li>15</li>
-                                      <li>16</li>
-                                      <li>17</li>
-                                      <li>18</li>
-                                      <li>19</li>
-                                      <li>20</li>
-                                      <li>21</li>
-                                      <li>22</li>
-                                      <li>23</li>
-                                      <li>24</li>
-                                      <li>25</li>
-                                      <li>26</li>
-                                      <li>27</li>
-                                      <li>28</li>
-                                      <li>29</li>
-                                      <li>30</li>
-                                      <li>31</li>
-                                      <li>32</li>
-                                      <li>33</li>
-                                      <li>34</li>
-                                      <li>35</li>
-                                      <li>36</li>
-                                      <li>37</li>
-                                      <li>38</li>
-                                      <li>39</li>
-                                      <li>40</li>
-                                      <li>41</li>
-                                      <li>42</li>
-                                      <li>43</li>
-                                      <li>44</li>
-                                      <li>45</li>
-                                      <li>46</li>
-                                      <li>47</li>
-                                      <li>48</li>
-                                      <li>49</li>
-                                      <li>50</li>
-                                      <li>51</li>
-                                      <li>52</li>
-                                      <li>53</li>
-                                      <li>54</li>
-                                      <li>55</li>
-                                      <li>56</li>
-                                      <li>57</li>
-                                      <li>58</li>
-                                      <li>59</li>
-                                    </ul>
-                                </div>
-                            </div>
+                              <select name="endTime" id="endTime">
+                                <option value="Select" style="display:none;">Select</option>
+                                <option value="Level 2">Level 2</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                              </select>
+                            <select name="endSec" id="endSec">
+                              <option value="Select" style="display:none;">Select</option>
+                              <option value="Level 2">Level 2</option>
+                              <option value="saab">Saab</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          
                             </div>
                             <label>Please enter a title here...</label>
                         </div>
@@ -451,17 +277,13 @@
                                     <div class="tooltip-content">Select “Upload Document” and upload your content file here (Accepted files: Word, Powerpoint, PDF, Video, Image, Excel, etc.). You may select “Knowledge Description” for writing the content directly here.</div>
                                 </div>
                             </div>
-                            <div class="selectInput">
-                                <input type="text" value="" class="openDropDown" id="invitees" placeholder="Add Invitees" readonly/> 
-                                <img src="/Images/arrow-down-svgrepo-com.svg"/>
-                                <div class="dropDownList">
-                                    <ul>
-                                        <li>test 1</li>
-                                        <li>test 2</li>
-                                        <li>test 3</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="addInvitees" id="addInvitees">
+                              <option value="Select" style="display:none;">Select</option>
+                              <option value="Level 2">Level 2</option>
+                              <option value="saab">Saab</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </select>
                             
                             
                                   <label>Please enter a title here...</label>
@@ -528,17 +350,13 @@
                         <div class="d-flex">
                           <h2>Focus area<span>*</span></h2>
                           </div>
-                          <div class="selectInput">
-                              <input type="text" value="" class="openDropDown" id="focusArea" placeholder="Select" readonly/> 
-                              <img src="/Images/arrow-down-svgrepo-com.svg"/>
-                              <div class="dropDownList">
-                                  <ul>
-                                      <li>test 1</li>
-                                      <li>test 2</li>
-                                      <li>test 3</li>
-                                  </ul>
-                              </div>
-                          </div>
+                          <select name="newFocusArea" id="newFocusArea">
+                            <option value="Select" style="display:none;">Select</option>
+                            <option value="Level 2">Level 2</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                          </select>
                           
                           
                           <label>Please enter a title here...</label>
@@ -549,17 +367,13 @@
                           <div class="d-flex">
                             <h2>Engagement Type<span>*</span></h2>
                             </div>
-                            <div class="selectInput">
-                                <input type="text" value="" class="openDropDown" id="engagementType" placeholder="Select" readonly/> 
-                                <img src="/Images/arrow-down-svgrepo-com.svg"/>
-                                <div class="dropDownList">
-                                    <ul>
-                                        <li>test 1</li>
-                                        <li>test 2</li>
-                                        <li>test 3</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="newEngagementType" id="newEngagementType">
+                              <option value="Select" style="display:none;">Select</option>
+                              <option value="Level 2">Level 2</option>
+                              <option value="saab">Saab</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </select>
                             
                             
                               <label>Please enter a title here...</label>

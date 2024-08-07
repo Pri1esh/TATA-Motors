@@ -48,7 +48,7 @@
   height: 40px;
   position: relative;
 }
-.home-section .enagegementPage .filterBox .selects .selectInput input[type=text] {
+.home-section .enagegementPage .filterBox .selects .selectInput input[type=text], .home-section .enagegementPage .filterBox .selects .selectInput select {
   background-color: #ffffff;
   border: 1px solid #c7c7c7;
   padding: 0;
@@ -59,10 +59,10 @@
   cursor: pointer;
   color: #757575;
 }
-.home-section .enagegementPage .filterBox .selects .selectInput input[type=text]:focus-visible {
+.home-section .enagegementPage .filterBox .selects .selectInput input[type=text]:focus-visible, .home-section .enagegementPage .filterBox .selects .selectInput select:focus-visible {
   outline: none;
 }
-.home-section .enagegementPage .filterBox .selects .selectInput input[type=text]::placeholder {
+.home-section .enagegementPage .filterBox .selects .selectInput input[type=text]::placeholder, .home-section .enagegementPage .filterBox .selects .selectInput select::placeholder {
   color: #BABABA;
 }
 .home-section .enagegementPage .filterBox .selects .selectInput img {
@@ -199,6 +199,14 @@
   font-size: 14px;
   margin-bottom: 0px;
   margin-top: 10px;
+}
+.home-section .enagegementPage .floatingIcon {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+}
+.home-section .enagegementPage .floatingIcon img {
+  width: 60px;
 }
 
 @media (max-width: 1000px) {

@@ -242,8 +242,9 @@
   margin-left: -1px;
   margin-right: 12px !important;
 }
-.formSection .columnDivs input[type=text],
-.formSection .columnDivsCheckBox input[type=text] {
+.formSection .columnDivs input[type=text], .formSection .columnDivs select,
+.formSection .columnDivsCheckBox input[type=text],
+.formSection .columnDivsCheckBox select {
   background-color: #ffffff;
   border: 1px solid #c7c7c7;
   padding: 0;
@@ -252,8 +253,9 @@
   height: 40px;
   padding-inline: 10px;
 }
-.formSection .columnDivs input[type=text]:focus-visible,
-.formSection .columnDivsCheckBox input[type=text]:focus-visible {
+.formSection .columnDivs input[type=text]:focus-visible, .formSection .columnDivs select:focus-visible,
+.formSection .columnDivsCheckBox input[type=text]:focus-visible,
+.formSection .columnDivsCheckBox select:focus-visible {
   outline: none;
 }
 .formSection .columnDivs input[type=text].filled,
@@ -317,6 +319,18 @@
 }
 .formSection .submissionsDiv .previewCheckContent .approverSelect {
   width: 100%;
+}
+.formSection .submissionsDiv .previewCheckContent .approverSelect .approverSelectClass {
+  background-color: #ffffff;
+  border: 1px solid #c7c7c7;
+  padding: 0;
+  width: 100%;
+  border-radius: 9px;
+  height: 40px;
+  padding-inline: 10px;
+}
+.formSection .submissionsDiv .previewCheckContent .approverSelect .approverSelectClass:focus-visible {
+  outline: none;
 }
 .formSection .submissionsDiv .previewCheckContent .labelClass {
   display: none;

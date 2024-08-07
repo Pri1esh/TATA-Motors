@@ -164,3 +164,20 @@ const textInputs = document.querySelectorAll('input[type="text"]');
     });
     
     
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const selectElements = document.querySelectorAll('select');
+
+        selectElements.forEach(function(select) {
+            // Simulate a change event to apply CSS on page load
+            const event = new Event('change');
+            select.dispatchEvent(event);
+
+            // Add change event listener to each select element
+            select.addEventListener('change', function() {
+                if (this.value !== "hiddenOption") {
+                    this.style.backgroundColor = '#f4f4f4'; // Change this to any color you like
+                }
+            });
+        });
+    });
