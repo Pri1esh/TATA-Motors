@@ -864,12 +864,11 @@ hr {
 }
 .Add-ring {
   position: absolute;
-  bottom: 0;
-  transform: translateY(50%);
-  right: var(--spacing);
+  bottom: 60px;
+  right: 60px;
 }
 .Add-ring img {
-  width: 70px;
+  width: 60px;
 }
 
 .my-contri-card {

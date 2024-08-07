@@ -1063,14 +1063,13 @@
 
 
 
- .Add-ring{
+  .Add-ring{
     position: absolute;
-    bottom: 0;
-    transform: translateY(50%);
-    right: var(--spacing);
+    bottom: 60px;
+    right: 60px;
 
     img{
-        width: 70px;
+        width: 60px;
     }
  } 
 
