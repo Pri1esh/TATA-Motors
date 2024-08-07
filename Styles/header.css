@@ -8,6 +8,34 @@ header {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+
+header .headerMainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /* justify-content: center; */
+  padding-inline: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header .logoDiv1{
   position: absolute;
   left: 50%;
@@ -83,14 +111,7 @@ header .headerMainDiv .logoDiv img:first-child {
   width: 9.375rem;
 }
 
-header .headerMainDiv {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  /* justify-content: center; */
-  padding-inline: 20px;
-}
+
 
 .headerMainDiv .headerRight{
   gap:40px;

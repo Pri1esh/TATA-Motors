@@ -875,6 +875,14 @@ hr {
 
 /* Screen resolution 150% ----------------------------------------------- */
 
+@media (resolution: 1dppx)
+{
+  .home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight,.popupModal,.portLandStartupPage,.enagegementPage  {
+    zoom:1.2;
+  }
+}
+
+
 @media (max-resolution: 1.5dppx) and (min-resolution: 1.3dppx) {
   header {
     zoom: 0.8;
@@ -895,7 +903,7 @@ hr {
  
 
 
-.home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight,.popupModal,.portLandStartupPage  {
+.home-section .nuggetSection,.home-section .formSection,.formheadingSection,.copyRight,.popupModal,.portLandStartupPage,.enagegementPage  {
   zoom:0.8;
 }
 .formSection .columnDivs .tooltip-content{
