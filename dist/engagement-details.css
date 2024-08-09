@@ -401,7 +401,7 @@ hr {
   cursor: pointer;
   width: 5rem;
   height: 5rem;
-  box-shadow: 0px 0px 26px #C95AB5;
+  box-shadow: 0px 0px 26px #c95ab5;
   background-color: white;
   border-radius: 11px;
   z-index: 1;
@@ -460,7 +460,9 @@ hr {
   padding-inline: 10px;
 }
 
-.engagementSection .viewAll button, .contributionss .viewAll button, .leadershipCol .viewAll button {
+.engagementSection .viewAll button,
+.contributionss .viewAll button,
+.leadershipCol .viewAll button {
   border: none;
   background-color: unset;
   font-size: 11px;
@@ -745,27 +747,27 @@ hr {
   margin-right: 5px;
 }
 .form-group.feed label:before {
-  background-color: #FFFBDD;
-  border: 1px solid #F5EA95;
+  background-color: #fffbdd;
+  border: 1px solid #f5ea95;
 }
 .form-group.register label:before {
-  background-color: #EBFFEE;
-  border: 1px solid #BFE2C4;
+  background-color: #ebffee;
+  border: 1px solid #bfe2c4;
 }
 .form-group.closed label:before {
-  background-color: #FFEEFC;
-  border: 1px solid #F7B1EB;
+  background-color: #ffeefc;
+  border: 1px solid #f7b1eb;
 }
 .form-group.complete label:before {
-  background-color: #D0D0D0;
-  border: 1px solid #A3A2A2;
+  background-color: #d0d0d0;
+  border: 1px solid #a3a2a2;
 }
 
 .formSection .historyContent .commentTable thead tr {
   border-color: #707070;
 }
 .formSection .historyContent .commentTable tbody tr:last-child {
-  border-color: #F7F7F7;
+  border-color: #f7f7f7;
 }
 
 @media (max-width: 1300px) {
@@ -791,7 +793,8 @@ hr {
   }
 }
 @media (max-width: 767px) {
-  .engagementSection .headingPart button, .contributionss .headingPart button {
+  .engagementSection .headingPart button,
+  .contributionss .headingPart button {
     padding-block: 6px;
   }
   .mainSec .col-md-6 {
@@ -812,7 +815,8 @@ hr {
   .mainSec .col-md-9 {
     margin-top: 10px;
   }
-  .engagementSection .headingPart button svg, .contributionss .headingPart button svg {
+  .engagementSection .headingPart button svg,
+  .contributionss .headingPart button svg {
     margin-top: -6px;
   }
   .leadership .leadershipCol {
@@ -835,7 +839,13 @@ hr {
   }
 }
 @media (resolution: 1dppx) {
-  .home-section .nuggetSection, .home-section .formSection, .formheadingSection, .copyRight, .popupModal, .portLandStartupPage, .enagegementPage {
+  .home-section .nuggetSection,
+  .home-section .formSection,
+  .formheadingSection,
+  .copyRight,
+  .popupModal,
+  .portLandStartupPage,
+  .enagegementPage {
     zoom: 1.2;
   }
 }
@@ -856,7 +866,13 @@ hr {
   .home-section {
     margin-top: 64px !important;
   }
-  .home-section .nuggetSection, .home-section .formSection, .formheadingSection, .copyRight, .popupModal, .portLandStartupPage, .enagegementPage {
+  .home-section .nuggetSection,
+  .home-section .formSection,
+  .formheadingSection,
+  .copyRight,
+  .popupModal,
+  .portLandStartupPage,
+  .enagegementPage {
     zoom: 0.8;
   }
   .formSection .columnDivs .tooltip-content {
@@ -893,6 +909,15 @@ hr {
   font-weight: 400;
   margin-bottom: 0px;
 }
+.home-section .portLandStartupPage .startupTableData .adminSelect {
+  margin-top: 3px;
+  line-height: 1;
+  font-size: 14px;
+}
+.home-section .portLandStartupPage .startupTableData .adminSelect:focus {
+  border-color: #c7c7c7;
+  box-shadow: none;
+}
 .home-section .portLandStartupPage .registerNow {
   display: flex;
   gap: 25px;
@@ -903,7 +928,7 @@ hr {
   width: 70%;
 }
 .home-section .portLandStartupPage .registerNow .paraDiv .agendaDiv {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 20px;
 }
 .home-section .portLandStartupPage .registerNow .paraDiv .agendaDiv h2 {
@@ -920,15 +945,6 @@ hr {
 .home-section .portLandStartupPage .registerNow .paraDiv .paraactualData p {
   font-size: 14px;
 }
-.home-section .portLandStartupPage .registerNow .paraDiv .regbutton button {
-  background-color: #2162B4;
-  color: #ffffff;
-  font-size: 14px;
-  border: none;
-  padding-inline: 25px;
-  padding-block: 8px;
-  font-weight: 400;
-}
 .home-section .portLandStartupPage .registerNow .imgDiv {
   width: 30%;
 }
@@ -938,6 +954,182 @@ hr {
   max-width: 500px;
   max-height: 500px;
   border-radius: 22px;
+}
+.home-section .portLandStartupPage .regbutton button {
+  background-color: #2162b4;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  padding-inline: 25px;
+  padding-block: 8px;
+  font-weight: 400;
+}
+.home-section .portLandStartupPage .adminMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  width: 70%;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs {
+  width: 70%;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs h2 {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs h2 span {
+  color: #fb0000;
+  font-weight: 600;
+  margin-left: 2px;
+  /* margin-top: -30px; */
+  top: -4px;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .form-control {
+  padding: 0px;
+  height: 100%;
+  line-height: 2.38;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .form-control:focus {
+  box-shadow: none;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs input[type=file]::-webkit-file-upload-button {
+  width: 25%;
+  line-height: 26px !important;
+  margin-left: -1px;
+  margin-right: 12px !important;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs input[type=text],
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs select {
+  background-color: #ffffff;
+  border: 1px solid #c7c7c7;
+  padding: 0;
+  width: 100%;
+  border-radius: 9px;
+  height: 40px;
+  padding-inline: 10px;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs input[type=text]:focus-visible,
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs select:focus-visible {
+  outline: none;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs input[type=text].filled {
+  background-color: #f4f4f4 !important; /* Change to desired color */
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .selectInput {
+  height: 40px;
+  position: relative;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .selectInput img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .selectInput .dropDownList {
+  display: none;
+  margin-top: 5px;
+  border: 1px solid #c7c7c7;
+  border-radius: 9px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .selectInput .dropDownList ul {
+  margin-bottom: 0px;
+  list-style: none;
+  padding: 0px;
+  width: 100%;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .selectInput .dropDownList ul li {
+  padding-block: 5px;
+  padding-inline: 10px;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .selectInput .dropDownList ul li:hover {
+  background-color: #e8eaed;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs label {
+  color: #fb0000;
+  font-size: 14px;
+  display: none;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .allowFeedback {
+  width: 25%;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .allowFeedback h2 {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .allowFeedback h2 span {
+  color: #fb0000;
+  font-weight: 600;
+  margin-left: 2px;
+  /* margin-top: -30px; */
+  top: -4px;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .allowFeedback .adminSelect {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 9px;
+  border-color: #c7c7c7;
+  width: 100%;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .allowFeedback .adminSelect:focus {
+  border-color: #c7c7c7;
+  box-shadow: none;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs {
+  /* Tooltip container */
+  /* Tooltip content */
+  /* Show the tooltip when hovering over the container */
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .toolTipIcon {
+  width: 13px;
+  height: 13px;
+  margin-left: 10px;
+  margin-bottom: 6px;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .tooltip-content {
+  visibility: hidden;
+  min-width: 500px;
+  background-color: rgba(0, 0, 0, 0.6235294118);
+  color: #fff;
+  border-radius: 9px;
+  border-top-left-radius: 0px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 40%; /* Position above the image */
+  left: 50%;
+  margin-left: 10px; /* Adjust this value as needed */
+  opacity: 1;
+  transition: opacity 0.3s;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3960784314);
+  font-size: 12px;
+  font-weight: 500;
+}
+.home-section .portLandStartupPage .adminMain .adminSubmits .columnDivs .tooltip-container:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+.home-section .portLandStartupPage .adminMain .subBtn button {
+  padding-inline: 50px;
 }
 
 @media (max-width: 1000px) {
@@ -1182,7 +1374,7 @@ nav .menuIconDiv .customTool {
   border-top-left-radius: 25px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: 2px solid #8D3896;
+  border: 2px solid #8d3896;
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   transform: translateX(100%);
 }
@@ -1246,7 +1438,7 @@ nav .menuIconDiv .customTool {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 .mobileMenus .userInfoDiv .mobileNavItems .menuIconDiv svg {
-  fill: #2063B4;
+  fill: #2063b4;
 }
 .mobileMenus .userInfoDiv .mobileNavItems .menuIconDiv:not(:first-child) {
   margin-top: 5px;
@@ -1298,7 +1490,7 @@ nav .menuIconDiv .customTool {
   border-top-left-radius: 25px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: 2px solid #8D3896;
+  border: 2px solid #8d3896;
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   transform: translateX(100%);
 }

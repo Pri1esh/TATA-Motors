@@ -181,3 +181,27 @@ const textInputs = document.querySelectorAll('input[type="text"]');
             });
         });
     });
+
+
+
+
+
+
+
+
+
+
+
+    var floatingIcon = document.querySelector('.filterIcon');
+    var overlayDivv = document.querySelector('.overlay');
+    if (floatingIcon) {
+        floatingIcon.addEventListener('click', function() {
+            document.querySelector('.filterBox').classList.toggle('open');
+            overlayDivv.classList.toggle('active');
+        });
+    }
+
+    overlayDivv.addEventListener('click', function() {
+        document.querySelector('.filterBox').classList.toggle('open');
+        overlayDivv.classList.remove('active');
+    });
