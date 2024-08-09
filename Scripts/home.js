@@ -80,6 +80,10 @@ const myContriTabs = document.getElementsByClassName("myContriTab");
     $('#myModal').modal('show');
 });
 
+document.getElementById('viewLeaderBoard').addEventListener('click', function () {
+  $('#leaderBoardModal').modal('show');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const pollOptions = document.querySelectorAll('input[name="poll"]');
   const progressBars = document.querySelectorAll('.progress');
