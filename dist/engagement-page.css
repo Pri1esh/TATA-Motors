@@ -1518,3 +1518,16 @@ nav .menuIconDiv .customTool {
 .overlay.active {
   display: block;
 }
+
+.registerNowPopUp {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-wrap: wrap;
+  white-space: wrap;
+  background-color: #0B7B43;
+  color: #ffffff;
+  text-align: center;
+  padding-block: 20px;
+  z-index: 10;
+}
